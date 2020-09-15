@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="使用hexo个人博客开始想写博客了,之前一直不记录东西,很多东西都找不到了,不过现在开始也不算晚. 安装hexo首先需要先安装node.js(记得换源),然后使用node.js安装hexo,  npm intall -g hexo-cli  安装完后可以用 hexo -v来查看. 初始化+运行建一个文件夹,在当前目录下打开命令行,输出  hexo init  成功后文件夹中会多出很多文件,这时候再">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:url" content="http://example.com/2020/09/15/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%20-%20%E5%89%AF%E6%9C%AC%20(2)/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="使用hexo个人博客开始想写博客了,之前一直不记录东西,很多东西都找不到了,不过现在开始也不算晚. 安装hexo首先需要先安装node.js(记得换源),然后使用node.js安装hexo,  npm intall -g hexo-cli  安装完后可以用 hexo -v来查看. 初始化+运行建一个文件夹,在当前目录下打开命令行,输出  hexo init  成功后文件夹中会多出很多文件,这时候再">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-15T04:35:04.188Z">
+<meta property="article:modified_time" content="2020-09-14T13:27:56.717Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,85 +154,177 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-搭建hexo个人博客 - 副本 (2)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="使用hexo个人博客"><a href="#使用hexo个人博客" class="headerlink" title="使用hexo个人博客"></a>使用hexo个人博客</h1><p>开始想写博客了,之前一直不记录东西,很多东西都找不到了,不过现在开始也不算晚.</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>首先需要先安装node.js(记得换源),然后使用node.js安装hexo,</p>
+<blockquote>
+<p>npm intall -g hexo-cli</p>
+</blockquote>
+<p>安装完后可以用 hexo -v来查看.</p>
+<h2 id="初始化-运行"><a href="#初始化-运行" class="headerlink" title="初始化+运行"></a>初始化+运行</h2><p>建一个文件夹,在当前目录下打开命令行,输出</p>
+<blockquote>
+<p>hexo init</p>
+</blockquote>
+<p>成功后文件夹中会多出很多文件,这时候再输入</p>
+<blockquote>
+<p>hexo s</p>
+</blockquote>
+<p>便可以在localhost:4000下查看hexo博客了</p>
+<h2 id="写一篇博文"><a href="#写一篇博文" class="headerlink" title="写一篇博文"></a>写一篇博文</h2><blockquote>
+<p>hexo n “我的第一篇hexo博客”</p>
+</blockquote>
+<p>然后再文件夹下的/source/_posts中找到它,打开他就可以开始写了,要注意是md格式的.<br>需要重新生成,退出运行ctrl+C.</p>
+<blockquote>
+<p>hexo clean<br>hexo g<br>hexo s </p>
+</blockquote>
+<p>上面三个命令分别为清缓存,生成,启动.</p>
+<h2 id="部署到github上"><a href="#部署到github上" class="headerlink" title="部署到github上"></a>部署到github上</h2><p>有自己服务器和域名的忽视此步骤.<br>登录github,创建仓库名为: 账号.github.io  <strong>==必须是这个==</strong>.<br>然后需要在安装一个插件,这个不需要全局,放在当前文件夹下就行了.</p>
+<blockquote>
+<p>npm install –save hexo-deployer-git </p>
+</blockquote>
+<p>最后在当前文件夹下的_config.yml中配置(在最后面)</p>
+<blockquote>
+<p>deploy:<br>  type: ‘git’<br>  repo: 仓库地址<br>  branch: master</p>
+</blockquote>
+<p>  然后在命令行</p>
+<blockquote>
+<p>hexo clean<br> hexo g<br> hexo d</p>
+</blockquote>
+<p> <a target="_blank" rel="noopener" href="https://haowu8888.github.io/%E5%9C%B0%E5%9D%80/">hexo个人博客</a>就可以访问了.</p>
+<h2 id="换主题"><a href="#换主题" class="headerlink" title="换主题"></a>换主题</h2><p>我用的是 <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia">推荐主题</a>.<br>这是个github上的项目,用法下面有写,很简单的.</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/15/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%20-%20%E5%89%AF%E6%9C%AC%20(2)/" class="archive-article-date">
-  	<time datetime="2020-09-15T04:35:04.188Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-15</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/09/15/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%20-%20%E5%89%AF%E6%9C%AC%20(2)/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/15/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%20-%20%E5%89%AF%E6%9C%AC/" class="archive-article-date">
-  	<time datetime="2020-09-15T04:35:03.314Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-15</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/15/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-09-15T04:33:16.549Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-15</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+  
+    <a href="/2020/09/15/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%20-%20%E5%89%AF%E6%9C%AC/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -251,8 +347,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
