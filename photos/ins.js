@@ -116,8 +116,8 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-		  var minSrc = 'https://github.com/haowu8888/HexoBlogImageRespository/blob/master/min_photos/' + data.link[i];
-          var src = 'https://github.com/haowu8888/HexoBlogImageRespository/blob/master/min_photos/' + data.link[i];
+		  var minSrc = 'https://hexophotoshaowu.oss-cn-hangzhou.aliyuncs.com/photos/' + data.link[i];
+          var src = 'https://hexophotoshaowu.oss-cn-hangzhou.aliyuncs.com/min_photos/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
