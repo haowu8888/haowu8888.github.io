@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wuzehe.gitee.io/photos/data.json</loc>
+    
+    <lastmod>2020-09-18</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wuzehe.gitee.io/archives/10bc5df1.html</loc>
     
     <lastmod>2020-09-18</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://wuzehe.gitee.io/archives/1533ed55.html</loc>
     
     <lastmod>2020-09-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wuzehe.gitee.io/photos/data.json</loc>
-    
-    <lastmod>2020-09-16</lastmod>
     
   </url>
   
